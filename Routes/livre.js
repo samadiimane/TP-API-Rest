@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const LivreModel = require('./Models/LivreModel');
-const verifyToken = require('../auth');
+const verifyToken = require('../Middleware/auth');
 
 
 router.use(verifyToken);
